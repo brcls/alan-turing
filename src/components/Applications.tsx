@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
-import { Container } from "./Container";
+import { TextContainer } from "./TextContainer";
 
 export const Applications: Component = () => {
-  return <Container>Applications</Container>;
+  return <TextContainer title="Aplicações"></TextContainer>;
 };

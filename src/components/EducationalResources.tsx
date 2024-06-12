@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
-import { Container } from "./Container";
+import { TextContainer } from "./TextContainer";
 
 export const EducationalResources: Component = () => {
-  return <Container>EducationalResources</Container>;
+  return <TextContainer title="Recursos Educacionais"></TextContainer>;
 };

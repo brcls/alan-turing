@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
-import { Container } from "./Container";
+import { TextContainer } from "./TextContainer";
 
 export const Legacy: Component = () => {
-  return <Container>Legacy</Container>;
+  return <TextContainer title="Influência e legado"></TextContainer>;
 };
