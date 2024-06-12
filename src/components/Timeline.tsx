@@ -3,7 +3,7 @@ import { TextContainer } from "./TextContainer";
 
 export const Timeline: Component = () => {
   return (
-    <TextContainer title="Timeline" className="flex flex-col px-8 pb-20">
+    <TextContainer title="Timeline" className="flex flex-col">
       <div class="flex h-full">
         <div class="mt-12 flex flex-1 flex-col">
           <p class="text-xl font-bold">Alan Turing</p>

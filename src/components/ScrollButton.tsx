@@ -1,4 +1,4 @@
-import { FaSolidArrowDownLong } from "solid-icons/fa";
+import { FaSolidArrowDownLong, FaSolidArrowUpLong } from "solid-icons/fa";
 import { Component } from "solid-js";
 
 interface IProps {
@@ -21,13 +21,36 @@ const ScrollButton: Component<IProps> = ({ mainRef }) => {
     }
   };
 
+  const scrollToPrevious = () => {
+    if (mainRef) {
+      const scrollableDiv = mainRef;
+      const currentScroll = scrollableDiv.scrollTop;
+      const windowHeight = window.innerHeight;
+
+      const nextScroll = currentScroll - windowHeight;
+
+      scrollableDiv.scrollTo({
+        top: nextScroll,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <button
-      onClick={scrollToNext}
-      class="fixed bottom-4 left-4 z-10 m-auto flex h-10 w-min animate-bounce items-center justify-center gap-4 rounded-lg border border-zinc-700/50 bg-zinc-800 px-6 py-4 text-center font-bold"
-    >
-      <FaSolidArrowDownLong /> Próximo
-    </button>
+    <div class="fixed bottom-4 left-4 z-10 m-auto flex flex-col gap-1">
+      <button
+        onClick={scrollToPrevious}
+        class="flex h-5 w-5 items-center justify-center gap-4 rounded-lg border border-zinc-800/50 bg-zinc-950 px-6 py-4 text-center font-bold"
+      >
+        <FaSolidArrowUpLong />
+      </button>
+      <button
+        onClick={scrollToNext}
+        class="flex h-5 w-5 items-center justify-center gap-4 rounded-lg border border-zinc-800/50 bg-zinc-950 px-6 py-4 text-center font-bold"
+      >
+        <FaSolidArrowDownLong />
+      </button>
+    </div>
   );
 };
 
