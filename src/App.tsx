@@ -17,7 +17,6 @@ const App: Component = () => {
 
   return (
     <>
-      <Header />
       <div
         ref={(el) => (mainDiv = el)}
         class="z-0 h-screen flex-grow snap-y snap-mandatory overflow-y-scroll"
@@ -43,6 +42,7 @@ const App: Component = () => {
         <Legacy />
         <Discussions />
       </div>
+      <Header mainRef={mainDiv} />
       <ScrollButton mainRef={mainDiv} />
     </>
   );

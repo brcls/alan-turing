@@ -1,19 +1,26 @@
 import { Component } from "solid-js";
 
-export const Header: Component = () => {
-  const handleOnClickBottom = (position: number) => {
-    let pageHeight = window.innerHeight;
-    let targetPosition = pageHeight * position;
-    let currentPosition = window.scrollY;
+interface IProps {
+  mainRef: HTMLDivElement | null;
+}
 
-    window.scrollTo({
-      top: targetPosition,
-      behavior: "smooth",
-    });
+export const Header: Component<IProps> = ({ mainRef }) => {
+  const handleOnClickBottom = (position: number) => {
+    if (mainRef) {
+      const scrollableDiv = mainRef;
+      const windowHeight = window.innerHeight;
+
+      const targetPosition = windowHeight * position;
+
+      scrollableDiv.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
-    <div class="fixed z-10 flex h-16 w-screen items-center justify-between border border-zinc-700/50 bg-zinc-800 p-2">
+    <div class="fixed top-0 z-10 flex h-16 w-screen items-center justify-between border border-zinc-700/50 bg-zinc-800 p-2">
       <button
         onClick={() => handleOnClickBottom(0)}
         class="flex h-10 w-min items-center justify-center text-nowrap rounded-lg border border-zinc-700/50 bg-zinc-800 px-6 py-4 text-center font-bold transition duration-500 hover:scale-105"
