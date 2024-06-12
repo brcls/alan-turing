@@ -14,8 +14,8 @@ export const IntroductionSection: Component = () => {
           Esperamos que este site inspire você a aprender mais sobre essa
           fascinante área e sua importância para o mundo moderno.
         </p>
-        <ul class="flex list-disc flex-col justify-between gap-20">
-          <div class="flex items-center gap-10">
+        <ul class="flex flex-col justify-between gap-20">
+          <div class="flex items-center gap-5">
             <img
               src="/images/alan-turing.png"
               class="h-20 w-20 rounded-full object-cover"
@@ -26,7 +26,7 @@ export const IntroductionSection: Component = () => {
               deles para o impossível." <p class="font-bold">- Alan Turing</p>
             </li>
           </div>
-          <div class="flex items-center gap-10">
+          <div class="flex items-center gap-5">
             <img
               src="/images/stephen-cook.png"
               class="h-20 w-20 rounded-full object-cover"
@@ -38,7 +38,7 @@ export const IntroductionSection: Component = () => {
               <p class="font-bold">- Stephen Cook</p>
             </li>
           </div>
-          <div class="flex items-center gap-10">
+          <div class="flex items-center gap-5">
             <img
               src="/images/noam-chomsky.png"
               class="h-20 w-20 rounded-full object-cover"
