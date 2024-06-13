@@ -5,12 +5,10 @@ import { profiles } from "./data/profiles";
 import { Header } from "./components/Header";
 import { IntroductionSection } from "./components/IntroductionSection";
 import { Timeline } from "./components/Timeline";
-import { Gallery } from "./components/Gallery";
 import { Concepts } from "./components/Concepts";
 import { Applications } from "./components/Applications";
 import { EducationalResources } from "./components/EducationalResources";
 import { Legacy } from "./components/Legacy";
-import { Discussions } from "./components/Discussions";
 
 const App: Component = () => {
   let mainDiv: HTMLDivElement | null = null;
@@ -35,12 +33,10 @@ const App: Component = () => {
           ))}
         </div>
         <Timeline />
-        <Gallery />
         <Concepts />
         <Applications />
         <EducationalResources />
         <Legacy />
-        <Discussions />
       </div>
       <Header mainRef={mainDiv} />
       <ScrollButton mainRef={mainDiv} />

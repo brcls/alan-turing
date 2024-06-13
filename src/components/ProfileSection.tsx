@@ -20,7 +20,7 @@ const ProfileSection: Component<ProfileSectionProps> = ({
   legacy,
 }) => {
   return (
-    <Container className="flex px-4 pb-4">
+    <Container className="flex items-center px-4 pb-4">
       {image && (
         <Motion.img
           inView={{ opacity: [0, 1] }}

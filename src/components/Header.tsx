@@ -43,37 +43,25 @@ export const Header: Component<IProps> = ({ mainRef }) => {
         onClick={() => handleOnClickBottom(5)}
         class="flex h-8 w-full items-center justify-center text-nowrap rounded-lg border border-zinc-800/50 bg-zinc-950 px-6 py-4 text-center font-bold transition duration-500 hover:scale-105"
       >
-        Galeria
+        Conceitos
       </button>
       <button
         onClick={() => handleOnClickBottom(6)}
         class="flex h-8 w-full items-center justify-center text-nowrap rounded-lg border border-zinc-800/50 bg-zinc-950 px-6 py-4 text-center font-bold transition duration-500 hover:scale-105"
       >
-        Conceitos
+        Aplicações
       </button>
       <button
         onClick={() => handleOnClickBottom(7)}
         class="flex h-8 w-full items-center justify-center text-nowrap rounded-lg border border-zinc-800/50 bg-zinc-950 px-6 py-4 text-center font-bold transition duration-500 hover:scale-105"
       >
-        Aplicações
+        Recursos Educacionais
       </button>
       <button
         onClick={() => handleOnClickBottom(8)}
         class="flex h-8 w-full items-center justify-center text-nowrap rounded-lg border border-zinc-800/50 bg-zinc-950 px-6 py-4 text-center font-bold transition duration-500 hover:scale-105"
       >
-        Recursos Educacionais
-      </button>
-      <button
-        onClick={() => handleOnClickBottom(9)}
-        class="flex h-8 w-full items-center justify-center text-nowrap rounded-lg border border-zinc-800/50 bg-zinc-950 px-6 py-4 text-center font-bold transition duration-500 hover:scale-105"
-      >
         Influência e Legado
-      </button>
-      <button
-        onClick={() => handleOnClickBottom(10)}
-        class="flex h-8 w-full items-center justify-center text-nowrap rounded-lg border border-zinc-800/50 bg-zinc-950 px-6 py-4 text-center font-bold transition duration-500 hover:scale-105"
-      >
-        Debate
       </button>
     </div>
   );
