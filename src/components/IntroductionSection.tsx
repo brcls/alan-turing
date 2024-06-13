@@ -57,12 +57,12 @@ export const IntroductionSection: Component = () => {
         <div class="flex h-full w-1/2 flex-col gap-4">
           <img
             src="/images/non-automaton.png"
-            class="h-full rounded-2xl object-cover"
+            class="h-2/3 rounded-2xl object-cover"
             alt=""
           />
           <img
             src="/images/automaton.png"
-            class="h-full rounded-2xl object-cover"
+            class="h-1/3 rounded-2xl object-cover"
             alt=""
           />
         </div>
