@@ -92,10 +92,12 @@ export const EducationalResources: Component = () => {
           <TextContainer title={sectionTitle}>
             <div class="flex h-full flex-col divide-y divide-solid">
               {sectionContent.map((item) => (
-                <div class="flex flex-1 flex-col items-start justify-center gap-10 border-zinc-800 px-4">
+                <div class="flex flex-1 flex-col items-start justify-center gap-2 border-zinc-800 md:gap-10 md:px-4">
                   {"items" in item ? (
                     <>
-                      <p class="mb-2 text-2xl font-bold">{item.title}</p>
+                      <p class="text-xl font-bold md:mb-2 md:text-2xl">
+                        {item.title}
+                      </p>
                       <ul class="ml-5 list-disc">
                         {item.items.map((subItem) => (
                           <li class="cursor-pointer hover:underline">

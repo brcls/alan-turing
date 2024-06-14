@@ -9,6 +9,7 @@ import { Concepts } from "./components/Concepts";
 import { Applications } from "./components/Applications";
 import { EducationalResources } from "./components/EducationalResources";
 import { InfluenceAndLegacy } from "./components/Legacy";
+import { TextContainer } from "./components/TextContainer";
 
 const App: Component = () => {
   let mainDiv: HTMLDivElement | null = null;
@@ -37,6 +38,15 @@ const App: Component = () => {
         <Applications />
         <EducationalResources />
         <InfluenceAndLegacy />
+
+        <TextContainer title="Formulário" className="items-center">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSesJiSV_hgKwIK7McDH5n58am5284Bd7wUSyXMoygk9acq70w/viewform?embedded=true"
+            class="mt-5 h-screen w-full rounded-xl md:w-1/2"
+          >
+            Carregando…
+          </iframe>
+        </TextContainer>
       </div>
       <Header mainRef={mainDiv} />
       <ScrollButton mainRef={mainDiv} />

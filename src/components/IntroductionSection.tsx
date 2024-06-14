@@ -4,8 +4,8 @@ import { TextContainer } from "./TextContainer";
 export const IntroductionSection: Component = () => {
   return (
     <TextContainer title="Introdução">
-      <div class="flex h-full items-center gap-10">
-        <div class="flex h-full w-1/2 flex-col justify-between gap-10 pt-6">
+      <div class="flex w-full flex-col items-center gap-10 md:h-full md:flex-row">
+        <div class="flex w-full flex-col justify-between gap-10 pt-6 md:h-full md:w-1/2">
           <p>
             Bem-vindo ao nosso site sobre Teoria da Computação! Este site foi
             criado como parte de um trabalho de extensão para a matéria de
@@ -15,11 +15,11 @@ export const IntroductionSection: Component = () => {
             Esperamos que este site inspire você a aprender mais sobre essa
             fascinante área e sua importância para o mundo moderno.
           </p>
-          <ul class="flex flex-1 flex-col justify-around">
+          <ul class="flex flex-1 flex-col justify-around gap-4">
             <div class="flex items-center gap-5">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg/640px-Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg"
-                class="h-20 w-20 rounded-full object-cover"
+                class="h-10 w-10 rounded-full object-cover md:h-20 md:w-20"
                 alt=""
               />
               <li>
@@ -30,7 +30,7 @@ export const IntroductionSection: Component = () => {
             <div class="flex items-center gap-5">
               <img
                 src="https://www.utoronto.ca/sites/default/files/stephen-cook.jpg"
-                class="h-20 w-20 rounded-full object-cover"
+                class="h-10 w-10 rounded-full object-cover md:h-20 md:w-20"
                 alt=""
               />
               <li>
@@ -42,7 +42,7 @@ export const IntroductionSection: Component = () => {
             <div class="flex items-center gap-5">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/4/46/Noam_Chomsky_portrait_2017_retouched.jpg"
-                class="h-20 w-20 rounded-full object-cover"
+                class="h-10 w-10 rounded-full object-cover md:h-20 md:w-20"
                 alt=""
               />
               <li>
@@ -54,15 +54,15 @@ export const IntroductionSection: Component = () => {
             </div>
           </ul>
         </div>
-        <div class="flex h-full w-1/2 flex-col gap-4">
+        <div class="flex w-full gap-4 md:h-full md:w-1/2 md:flex-col">
           <img
             src="/images/image.png"
-            class="h-1/2 rounded-2xl bg-white object-contain"
+            class="w-1/2 rounded-2xl bg-white object-contain md:h-1/2 md:w-full"
             alt=""
           />
           <img
             src="https://s22.cs251.com/Text/04_Deterministic_Finite_Automata/media_upload/dfa.png"
-            class="h-1/2 rounded-2xl bg-white object-cover"
+            class="w-1/2 rounded-2xl bg-white object-cover md:h-1/2 md:w-full"
             alt=""
           />
         </div>
