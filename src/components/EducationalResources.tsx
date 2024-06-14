@@ -100,7 +100,7 @@ export const EducationalResources: Component = () => {
                       </p>
                       <ul class="ml-5 list-disc">
                         {item.items.map((subItem) => (
-                          <li class="cursor-pointer hover:underline">
+                          <li class="cursor-pointer underline max-md:text-sm md:hover:underline">
                             <a
                               href={subItem.link}
                               target="_blank"
@@ -113,7 +113,7 @@ export const EducationalResources: Component = () => {
                       </ul>
                     </>
                   ) : (
-                    <p class="cursor-pointer hover:underline">
+                    <p class="cursor-pointer max-md:text-sm max-md:underline md:hover:underline">
                       <a
                         href={item.link}
                         target="_blank"

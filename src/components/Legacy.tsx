@@ -109,7 +109,7 @@ export const InfluenceAndLegacy: Component = () => {
                   <ul class="ml-5 list-disc">
                     {item.items.map(
                       (subItem: { text: string; link?: string }) => (
-                        <li>
+                        <li class="max-md:text-sm">
                           {subItem.link ? (
                             <a
                               href={subItem.link}
