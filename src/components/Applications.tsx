@@ -7,7 +7,7 @@ export const Applications: Component = () => {
       <div class="flex h-full divide-x divide-solid">
         <div class="flex flex-1 flex-col items-center justify-center gap-10 border-zinc-800 px-4">
           <img
-            src="images/computing.png"
+            src="https://uhe.edu.pk/wp-content/uploads/2022/10/1.png"
             alt=""
             class="h-1/2 rounded-xl object-cover"
           />
@@ -30,14 +30,14 @@ export const Applications: Component = () => {
             </p>
           </div>
           <img
-            src="images/complexity.png"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Complexity_subsets_pspace.svg/1920px-Complexity_subsets_pspace.svg.png"
             alt=""
             class="h-1/2 rounded-xl object-cover"
           />
         </div>
         <div class="flex flex-1 flex-col items-center justify-center gap-10 border-zinc-800 px-4">
           <img
-            src="images/natural-language.png"
+            src="https://www.colorado.edu/lab/clear/sites/default/files/styles/medium/public/block/infographs-16_1.png?itok=HJRrMXs0"
             alt=""
             class="h-1/2 rounded-xl object-cover"
           />

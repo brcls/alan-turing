@@ -58,7 +58,7 @@ export const Header: Component<IProps> = ({ mainRef }) => {
         Recursos Educacionais
       </button>
       <button
-        onClick={() => handleOnClickBottom(8)}
+        onClick={() => handleOnClickBottom(9)}
         class="flex h-8 w-full items-center justify-center text-nowrap rounded-lg border border-zinc-800/50 bg-zinc-950 px-6 py-4 text-center font-bold transition duration-500 hover:scale-105"
       >
         Influência e Legado

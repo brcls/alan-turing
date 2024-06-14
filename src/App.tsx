@@ -8,7 +8,7 @@ import { Timeline } from "./components/Timeline";
 import { Concepts } from "./components/Concepts";
 import { Applications } from "./components/Applications";
 import { EducationalResources } from "./components/EducationalResources";
-import { Legacy } from "./components/Legacy";
+import { InfluenceAndLegacy } from "./components/Legacy";
 
 const App: Component = () => {
   let mainDiv: HTMLDivElement | null = null;
@@ -36,7 +36,7 @@ const App: Component = () => {
         <Concepts />
         <Applications />
         <EducationalResources />
-        <Legacy />
+        <InfluenceAndLegacy />
       </div>
       <Header mainRef={mainDiv} />
       <ScrollButton mainRef={mainDiv} />

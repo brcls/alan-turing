@@ -22,10 +22,7 @@ const ProfileSection: Component<ProfileSectionProps> = ({
   return (
     <Container className="flex items-center px-4 pb-4">
       {image && (
-        <Motion.img
-          inView={{ opacity: [0, 1] }}
-          transition={{ duration: 7, easing: "linear" }}
-          inViewOptions={{ once: true }}
+        <img
           class="h-full w-1/2 cursor-pointer rounded-xl object-cover transition duration-500 hover:scale-[1.01]"
           src={image}
           alt={alt}

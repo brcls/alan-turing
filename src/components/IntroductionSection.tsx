@@ -18,7 +18,7 @@ export const IntroductionSection: Component = () => {
           <ul class="flex flex-1 flex-col justify-around">
             <div class="flex items-center gap-5">
               <img
-                src="/images/alan-turing.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg/640px-Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg"
                 class="h-20 w-20 rounded-full object-cover"
                 alt=""
               />
@@ -29,7 +29,7 @@ export const IntroductionSection: Component = () => {
             </div>
             <div class="flex items-center gap-5">
               <img
-                src="/images/stephen-cook.png"
+                src="https://www.utoronto.ca/sites/default/files/stephen-cook.jpg"
                 class="h-20 w-20 rounded-full object-cover"
                 alt=""
               />
@@ -41,7 +41,7 @@ export const IntroductionSection: Component = () => {
             </div>
             <div class="flex items-center gap-5">
               <img
-                src="/images/noam-chomsky.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/4/46/Noam_Chomsky_portrait_2017_retouched.jpg"
                 class="h-20 w-20 rounded-full object-cover"
                 alt=""
               />
@@ -56,13 +56,13 @@ export const IntroductionSection: Component = () => {
         </div>
         <div class="flex h-full w-1/2 flex-col gap-4">
           <img
-            src="/images/non-automaton.png"
-            class="h-2/3 rounded-2xl object-cover"
+            src="/images/image.png"
+            class="h-1/2 rounded-2xl bg-white object-contain"
             alt=""
           />
           <img
-            src="/images/automaton.png"
-            class="h-1/3 rounded-2xl object-cover"
+            src="https://s22.cs251.com/Text/04_Deterministic_Finite_Automata/media_upload/dfa.png"
+            class="h-1/2 rounded-2xl bg-white object-cover"
             alt=""
           />
         </div>

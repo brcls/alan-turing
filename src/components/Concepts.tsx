@@ -7,7 +7,7 @@ export const Concepts: Component = () => {
       <div class="flex h-full divide-x divide-solid">
         <div class="flex flex-1 flex-col items-center justify-center gap-10 border-zinc-800 px-4">
           <img
-            src="images/turing-machine.png"
+            src="https://images.squarespace-cdn.com/content/v1/558dd098e4b04b60d9638dc5/1462150953462-S2SSX0RG5F5ZHQS5TKMN/image-asset.jpeg"
             alt=""
             class="h-1/2 rounded-xl object-cover"
           />
@@ -32,14 +32,14 @@ export const Concepts: Component = () => {
             </p>
           </div>
           <img
-            src="images/np-complete.png"
+            src="https://miro.medium.com/v2/resize:fit:746/0*nedxMbwYe3CzPGga.png"
             alt=""
-            class="h-1/2 rounded-xl object-cover"
+            class="h-1/2 rounded-xl bg-white object-contain p-4"
           />
         </div>
         <div class="flex flex-1 flex-col items-center justify-center gap-10 border-zinc-800 px-4">
           <img
-            src="images/generative.png"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Verb_Movement.jpg/562px-Verb_Movement.jpg"
             alt=""
             class="h-1/2 rounded-xl object-cover"
           />
