@@ -12,15 +12,9 @@ type ArticleContent = {
   link: string;
 };
 
-type ExerciseContent = {
-  text: string;
-  link: string;
-};
-
 type EducationalContent = {
   "Vídeos Explicativos": VideoContent[];
   "Artigos e Livros": ArticleContent[];
-  "Exercícios Interativos": ExerciseContent[];
 };
 
 // Dados para preenchimento do componente
@@ -93,64 +87,46 @@ const educationalContent: EducationalContent = {
 export const EducationalResources: Component = () => {
   return (
     <div>
-      {Object.keys(educationalContent).map((sectionTitle) => (
-        <TextContainer title={sectionTitle}>
-          <div class="flex h-full flex-col divide-y divide-solid">
-            {(educationalContent as any)[sectionTitle].map(
-              (item: any, index: number) => {
-                if ("items" in item) {
-                  return (
-                    <div
-                      class="flex flex-1 flex-col items-start justify-center gap-10 border-zinc-800 px-4"
-                      key={index}
-                    >
+      {Object.entries(educationalContent).map(
+        ([sectionTitle, sectionContent]) => (
+          <TextContainer title={sectionTitle}>
+            <div class="flex h-full flex-col divide-y divide-solid">
+              {sectionContent.map((item) => (
+                <div class="flex flex-1 flex-col items-start justify-center gap-10 border-zinc-800 px-4">
+                  {"items" in item ? (
+                    <>
                       <p class="mb-2 text-2xl font-bold">{item.title}</p>
                       <ul class="ml-5 list-disc">
-                        {item.items.map(
-                          (
-                            subItem: { text: string; link: string },
-                            subIndex: number,
-                          ) => (
-                            <li
-                              class="cursor-pointer hover:underline"
-                              key={subIndex}
+                        {item.items.map((subItem) => (
+                          <li class="cursor-pointer hover:underline">
+                            <a
+                              href={subItem.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                              <a
-                                href={subItem.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                {subItem.text}
-                              </a>
-                            </li>
-                          ),
-                        )}
+                              {subItem.text}
+                            </a>
+                          </li>
+                        ))}
                       </ul>
-                    </div>
-                  );
-                } else {
-                  return (
-                    <div
-                      class="flex flex-1 flex-col items-start justify-center gap-10 border-zinc-800 px-4"
-                      key={index}
-                    >
-                      <p class="cursor-pointer hover:underline">
-                        <a
-                          href={item.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {item.text}
-                        </a>
-                      </p>
-                    </div>
-                  );
-                }
-              },
-            )}
-          </div>
-        </TextContainer>
-      ))}
+                    </>
+                  ) : (
+                    <p class="cursor-pointer hover:underline">
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {item.text}
+                      </a>
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </TextContainer>
+        ),
+      )}
     </div>
   );
 };

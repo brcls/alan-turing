@@ -1,5 +1,4 @@
 import { Component } from "solid-js";
-import { Motion } from "solid-motionone";
 import { Container } from "./Container";
 
 interface ProfileSectionProps {

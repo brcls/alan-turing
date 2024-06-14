@@ -101,19 +101,13 @@ export const InfluenceAndLegacy: Component = () => {
         <TextContainer title={sectionTitle}>
           <div class="flex h-full flex-col divide-y divide-solid">
             {(influenceAndLegacyContent as any)[sectionTitle].map(
-              (item: any, index: number) => (
-                <div
-                  class="flex flex-1 flex-col items-start justify-center gap-10 border-zinc-800 px-4"
-                  key={index}
-                >
+              (item: any) => (
+                <div class="flex flex-1 flex-col items-start justify-center gap-10 border-zinc-800 px-4">
                   <p class="mb-2 text-2xl font-bold">{item.title}</p>
                   <ul class="ml-5 list-disc">
                     {item.items.map(
-                      (
-                        subItem: { text: string; link?: string },
-                        subIndex: number,
-                      ) => (
-                        <li class="cursor-pointer" key={subIndex}>
+                      (subItem: { text: string; link?: string }) => (
+                        <li class="cursor-pointer">
                           {subItem.link ? (
                             <a
                               href={subItem.link}
