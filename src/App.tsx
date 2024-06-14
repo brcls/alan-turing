@@ -40,6 +40,17 @@ const App: Component = () => {
         <InfluenceAndLegacy />
 
         <TextContainer title="Formulário" className="items-center">
+          <a
+            href={
+              "https://docs.google.com/forms/d/e/1FAIpQLSesJiSV_hgKwIK7McDH5n58am5284Bd7wUSyXMoygk9acq70w/viewform?usp=sf_link"
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p class="underline">
+              Clique aqui para abrir o formulário no Google Forms
+            </p>
+          </a>
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSesJiSV_hgKwIK7McDH5n58am5284Bd7wUSyXMoygk9acq70w/viewform?embedded=true"
             class="mt-5 h-svh w-full rounded-xl md:w-1/2"
