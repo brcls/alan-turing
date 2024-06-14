@@ -36,16 +36,16 @@ const ProfileSection: Component<ProfileSectionProps> = ({
               alt={alt}
             />
           )}
-          <p class="text-3xl font-bold">{title}</p>
+          <p class="font-bold md:text-3xl">{title}</p>
         </div>
-        <p class="mb-2 mt-8 text-lg font-bold md:text-xl">Vida e Educação</p>
-        <p>{life}</p>
-        <p class="mb-2 mt-4 text-lg font-bold md:text-xl">
+        <p class="text-md mb-2 mt-8 font-bold md:text-xl">Vida e Educação</p>
+        <p class="max-md:text-sm">{life}</p>
+        <p class="text-md mb-2 mt-4 font-bold md:text-xl">
           Contribuições Científicas
         </p>
-        <p>{contributions}</p>
-        <p class="mb-2 mt-4 text-lg font-bold md:text-xl">Legado</p>
-        <p>{legacy}</p>
+        <p class="max-md:text-sm">{contributions}</p>
+        <p class="text-md mb-2 mt-4 font-bold md:text-xl">Legado</p>
+        <p class="max-md:text-sm">{legacy}</p>
       </div>
     </Container>
   );

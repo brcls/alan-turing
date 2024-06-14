@@ -102,7 +102,7 @@ export const InfluenceAndLegacy: Component = () => {
           <div class="flex h-full flex-col divide-y divide-solid">
             {(influenceAndLegacyContent as any)[sectionTitle].map(
               (item: any) => (
-                <div class="flex flex-1 flex-col items-start justify-center gap-2 border-zinc-800 md:gap-10 md:px-4">
+                <div class="flex flex-1 flex-col items-start justify-center gap-2 border-zinc-800 pb-4 pt-10 md:gap-10 md:px-4">
                   <p class="text-xl font-bold md:mb-2 md:text-2xl">
                     {item.title}
                   </p>

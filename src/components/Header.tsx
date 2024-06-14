@@ -75,7 +75,7 @@ export const Header: Component<IProps> = ({ mainRef }) => {
           Formulário
         </button>
       </div>
-      <div class="fixed right-6 top-4 z-10 flex md:hidden">
+      {/* <div class="fixed right-6 top-4 z-10 flex md:hidden">
         <div class="inline-flex items-center overflow-hidden rounded-md border border-zinc-800/50 bg-zinc-900 hover:scale-105 hover:bg-zinc-800">
           <button
             onClick={() => setIsActive((old) => !old)}
@@ -152,7 +152,7 @@ export const Header: Component<IProps> = ({ mainRef }) => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

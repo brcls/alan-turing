@@ -6,7 +6,7 @@ export const IntroductionSection: Component = () => {
     <TextContainer title="Introdução">
       <div class="flex w-full flex-col items-center gap-10 md:h-full md:flex-row">
         <div class="flex w-full flex-col justify-between gap-10 pt-6 md:h-full md:w-1/2">
-          <p>
+          <p class="max-md:text-sm">
             Bem-vindo ao nosso site sobre Teoria da Computação! Este site foi
             criado como parte de um trabalho de extensão para a matéria de
             Introdução à Teoria da Computação. Aqui, exploramos as vidas e
@@ -22,7 +22,7 @@ export const IntroductionSection: Component = () => {
                 class="h-10 w-10 rounded-full object-cover md:h-20 md:w-20"
                 alt=""
               />
-              <li>
+              <li class="max-md:text-sm">
                 "A única maneira de descobrir os limites do possível é ir além
                 deles para o impossível." <p class="font-bold">- Alan Turing</p>
               </li>
@@ -33,7 +33,7 @@ export const IntroductionSection: Component = () => {
                 class="h-10 w-10 rounded-full object-cover md:h-20 md:w-20"
                 alt=""
               />
-              <li>
+              <li class="max-md:text-sm">
                 "A complexidade de um problema é a quantidade de recursos
                 necessários para resolvê-lo."{" "}
                 <p class="font-bold">- Stephen Cook</p>
@@ -45,7 +45,7 @@ export const IntroductionSection: Component = () => {
                 class="h-10 w-10 rounded-full object-cover md:h-20 md:w-20"
                 alt=""
               />
-              <li>
+              <li class="max-md:text-sm">
                 "A linguagem é um processo de livre criação; suas leis e
                 princípios são fixos, mas a maneira como os princípios da
                 geração são usados é livre e infinitamente variada."{" "}
@@ -54,15 +54,15 @@ export const IntroductionSection: Component = () => {
             </div>
           </ul>
         </div>
-        <div class="flex w-full gap-4 md:h-full md:w-1/2 md:flex-col">
+        <div class="flex w-full flex-col gap-4 md:h-full md:w-1/2">
           <img
             src="/images/image.png"
-            class="w-1/2 rounded-2xl bg-white object-contain md:h-1/2 md:w-full"
+            class="w-full rounded-2xl bg-white object-contain md:h-1/2"
             alt=""
           />
           <img
             src="https://s22.cs251.com/Text/04_Deterministic_Finite_Automata/media_upload/dfa.png"
-            class="w-1/2 rounded-2xl bg-white object-cover md:h-1/2 md:w-full"
+            class="w-full rounded-2xl bg-white object-cover md:h-1/2"
             alt=""
           />
         </div>

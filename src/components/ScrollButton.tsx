@@ -37,7 +37,7 @@ const ScrollButton: Component<IProps> = ({ mainRef }) => {
   };
 
   return (
-    <div class="fixed bottom-4 right-6 z-10 m-auto flex flex-col gap-1">
+    <div class="fixed bottom-4 right-6 z-10 m-auto hidden flex-col gap-1 md:flex">
       <button
         onClick={scrollToPrevious}
         class="flex h-5 w-5 items-center justify-center gap-4 rounded-lg border border-zinc-800/50 bg-zinc-950 px-6 py-4 text-center font-bold"

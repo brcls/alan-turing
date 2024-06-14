@@ -4,12 +4,12 @@ import { TextContainer } from "./TextContainer";
 export const Concepts: Component = () => {
   return (
     <TextContainer title="Conceitos">
-      <div class="flex h-full flex-col items-center justify-around divide-solid md:flex-row md:divide-x">
-        <div class="flex h-1/4 items-center justify-center gap-10 border-zinc-800 px-4 md:h-full md:flex-1 md:flex-col">
+      <div class="mt-10 flex h-full flex-col items-center justify-around gap-4 divide-solid md:flex-row md:divide-x">
+        <div class="flex h-1/4 flex-col items-center justify-center gap-10 border-zinc-800 px-4 md:h-full md:flex-1">
           <img
             src="https://images.squarespace-cdn.com/content/v1/558dd098e4b04b60d9638dc5/1462150953462-S2SSX0RG5F5ZHQS5TKMN/image-asset.jpeg"
             alt=""
-            class="rounded-xl object-cover max-md:w-1/4 md:h-1/2"
+            class="rounded-xl object-cover md:h-1/2"
           />
           <div>
             <p class="mb-2 text-xl font-bold md:text-2xl">Máquina de Turing</p>
@@ -21,7 +21,12 @@ export const Concepts: Component = () => {
             </p>
           </div>
         </div>
-        <div class="flex h-1/4 items-center justify-center gap-10 border-zinc-800 px-4 md:h-full md:flex-1 md:flex-col">
+        <div class="flex h-1/4 flex-col items-center justify-center gap-10 border-zinc-800 px-4 md:h-full md:flex-1">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:746/0*nedxMbwYe3CzPGga.png"
+            alt=""
+            class="rounded-xl bg-white object-contain p-4 md:h-1/2"
+          />
           <div>
             <p class="mb-2 text-xl font-bold md:text-2xl">NP-Completude</p>
             <p>
@@ -31,17 +36,12 @@ export const Concepts: Component = () => {
               computação.
             </p>
           </div>
-          <img
-            src="https://miro.medium.com/v2/resize:fit:746/0*nedxMbwYe3CzPGga.png"
-            alt=""
-            class="rounded-xl bg-white object-contain p-4 max-md:w-1/4 md:h-1/2"
-          />
         </div>
-        <div class="flex h-1/4 items-center justify-center gap-10 border-zinc-800 px-4 md:h-full md:flex-1 md:flex-col">
+        <div class="flex h-1/4 flex-col items-center justify-center gap-10 border-zinc-800 px-4 md:h-full md:flex-1">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Verb_Movement.jpg/562px-Verb_Movement.jpg"
             alt=""
-            class="rounded-xl object-cover max-md:w-1/4 md:h-1/2"
+            class="rounded-xl object-cover md:h-1/2"
           />
           <div>
             <p class="mb-2 text-xl font-bold md:text-2xl">Gramática gerativa</p>

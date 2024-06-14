@@ -4,12 +4,12 @@ import { TextContainer } from "./TextContainer";
 export const Applications: Component = () => {
   return (
     <TextContainer title="Aplicações">
-      <div class="flex h-full flex-col items-center justify-around divide-solid md:flex-row md:divide-x">
-        <div class="flex h-1/4 items-center justify-center gap-10 border-zinc-800 px-4 py-4 md:h-full md:flex-1 md:flex-col md:py-0">
+      <div class="mt-10 flex h-full flex-col items-center justify-around gap-4 divide-solid md:flex-row md:divide-x">
+        <div class="flex h-1/4 flex-col items-center justify-center gap-10 border-zinc-800 px-4 py-4 md:h-full md:flex-1">
           <img
             src="https://uhe.edu.pk/wp-content/uploads/2022/10/1.png"
             alt=""
-            class="rounded-xl object-cover max-md:w-1/4 md:h-1/2"
+            class="rounded-xl object-cover md:h-1/2"
           />
           <div>
             <p class="mb-2 text-xl font-bold md:text-2xl">
@@ -22,7 +22,12 @@ export const Applications: Component = () => {
             </p>
           </div>
         </div>
-        <div class="flex h-1/4 items-center justify-center gap-10 border-zinc-800 px-4 py-4 md:h-full md:flex-1 md:flex-col md:py-0">
+        <div class="flex h-1/4 flex-col items-center justify-center gap-10 border-zinc-800 px-4 py-4 md:h-full md:flex-1">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Complexity_subsets_pspace.svg/1920px-Complexity_subsets_pspace.svg.png"
+            alt=""
+            class="rounded-xl object-contain md:h-1/2"
+          />
           <div>
             <p class="mb-2 text-xl font-bold md:text-2xl">
               Complexidade Computacional
@@ -33,17 +38,12 @@ export const Applications: Component = () => {
               problemas podem ser resolvidos eficientemente.
             </p>
           </div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Complexity_subsets_pspace.svg/1920px-Complexity_subsets_pspace.svg.png"
-            alt=""
-            class="rounded-xl object-cover max-md:w-1/4 md:h-1/2"
-          />
         </div>
-        <div class="flex h-1/4 items-center justify-center gap-10 border-zinc-800 px-4 py-4 md:h-full md:flex-1 md:flex-col md:py-0">
+        <div class="flex h-1/4 flex-col items-center justify-center gap-10 border-zinc-800 px-4 py-4 md:h-full md:flex-1 md:py-0">
           <img
             src="https://www.colorado.edu/lab/clear/sites/default/files/styles/medium/public/block/infographs-16_1.png?itok=HJRrMXs0"
             alt=""
-            class="rounded-xl object-cover max-md:w-1/4 md:h-1/2"
+            class="rounded-xl object-cover md:h-1/2"
           />
           <div>
             <p class="mb-2 text-xl font-bold md:text-2xl">

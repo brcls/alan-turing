@@ -18,7 +18,7 @@ const App: Component = () => {
     <>
       <div
         ref={(el) => (mainDiv = el)}
-        class="z-0 h-screen flex-grow snap-y snap-mandatory overflow-y-scroll"
+        class="z-0 md:h-screen md:flex-grow md:snap-y md:snap-mandatory md:overflow-y-scroll"
       >
         <IntroductionSection />
         <div>
@@ -42,7 +42,7 @@ const App: Component = () => {
         <TextContainer title="Formulário" className="items-center">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSesJiSV_hgKwIK7McDH5n58am5284Bd7wUSyXMoygk9acq70w/viewform?embedded=true"
-            class="mt-5 h-screen w-full rounded-xl md:w-1/2"
+            class="mt-5 h-svh w-full rounded-xl md:w-1/2"
           >
             Carregando…
           </iframe>

@@ -15,7 +15,7 @@ export const TextContainer: Component<IProps> = ({
   return (
     <div
       class={twMerge(
-        "flex h-screen snap-center snap-always flex-col px-8 pb-16 pt-4 md:pt-16",
+        "flex flex-col px-8 pb-16 pt-0 md:h-lvh md:snap-center md:snap-always md:pt-16",
         className,
       )}
     >

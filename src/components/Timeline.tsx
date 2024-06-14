@@ -6,8 +6,8 @@ export const Timeline: Component = () => {
     <TextContainer title="Timeline" className="flex flex-col">
       <div class="flex h-full flex-col md:flex-row">
         <div class="mt-5 flex flex-1 flex-col md:mt-12">
-          <p class="text-2xl font-bold">Alan Turing</p>
-          <div class="mt-6 flex flex-1 flex-col justify-between border-l border-dashed px-4 py-2">
+          <p class="text-xl font-bold md:text-2xl">Alan Turing</p>
+          <div class="mt-6 flex flex-1 flex-col justify-between gap-4 border-l border-dashed px-4 py-2">
             <div class="flex items-start gap-1">
               <p class="font-bold">1936: </p> Publicação de "On Computable
               Numbers".
@@ -33,8 +33,8 @@ export const Timeline: Component = () => {
         </div>
 
         <div class="mt-5 flex flex-1 flex-col md:mt-12">
-          <p class="text-2xl font-bold">Stephen Cook</p>
-          <div class="mt-6 flex flex-1 flex-col justify-between border-l border-dashed px-4 py-2">
+          <p class="text-xl font-bold md:text-2xl">Stephen Cook</p>
+          <div class="mt-6 flex flex-1 flex-col justify-between gap-4 border-l border-dashed px-4 py-2">
             <div class="flex items-start gap-1">
               <p class="font-bold">1939: </p> Nascimento.
             </div>
@@ -52,8 +52,8 @@ export const Timeline: Component = () => {
         </div>
 
         <div class="mt-5 flex flex-1 flex-col md:mt-12">
-          <p class="text-2xl font-bold">Noam Chomsky</p>
-          <div class="mt-6 flex flex-1 flex-col justify-between border-l border-dashed px-4 py-2">
+          <p class="text-xl font-bold md:text-2xl">Noam Chomsky</p>
+          <div class="mt-6 flex flex-1 flex-col justify-between gap-4 border-l border-dashed px-4 py-2">
             <div class="flex items-start gap-1">
               <p class="font-bold">1928: </p> Nascimento.
             </div>
